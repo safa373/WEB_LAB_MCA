@@ -1,0 +1,65 @@
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+  align-content: center;
+  text-align:center;
+  padding-top:50px;
+}
+
+h1 {
+  color: maroon;
+
+}
+</style>
+
+<title> FORM
+</title>
+</head>
+<body>
+<form>
+<h1>Registraion Form</h1>
+  <label for="fname">First name:</label><br  <br>
+      <input type="text" id="fname" name="fname"><br>  <br>
+          <label for="fname">Second name:</label><br>  
+                <input type="text" id="fname" name="fname"><br>  <br>
+    <label for="email">Email:</label><br> 
+<input type="email" id="email" name="email"><br>  <br>
+<label for="birthday">Birthday:</label>
+<input type="date" id="birthday" name="birthday"><br>  <br>
+
+  <label for="District">District:</label>
+<select id="district" name="district">
+  <option value="calict">Calicut</option>
+  <option value="wayanad">Wayanad</option>
+  <option value="kannur">Kannur</option>
+  <option value="malappuram">Malappuram</option>
+</select>
+<br>  <br>
+<label for="cars">Your skill:</label>
+<br>  <br>
+JAVA
+  <input type="range" id="a" name="a" value="0">
+  <br>  <br>
+python
+  <input type="range" id="a" name="a" value="0">
+  <br>   <br>
+C++
+  <input type="range" id="a" name="a" value="0">
+  <br>  <br>
+
+  <br><label for="fname">Dicription About You:</label>
+  <br>
+  <textarea name="message" rows="7" cols="30">
+  </textarea><br><br>
+  <button onclick="myFunction()">submit</button>
+</form>
+<script>
+function myFunction() {
+  alert("submitted!");
+}
+</script>
+
+</body>
+</html>

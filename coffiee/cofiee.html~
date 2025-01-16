@@ -1,0 +1,26 @@
+<html>
+<head>
+<link rel="stylesheet" href="cofiee.css">
+<title>S A coffies
+</title>
+</head>
+<body>
+<header>
+<nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+                <a href="https://www.w3schools.com">
+                <img border="0" alt="W3Schools" src="w3log.jpeg"  margin-left="50px">
+</a>
+</nav>
+
+
+</header>
+<h1 color="white" >Brazil grows the most coffee in the world. ...</h1>
+</body>
+</html>
+

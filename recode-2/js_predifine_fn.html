@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String and Math Methods</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2d3e50;
+            font-weight: 600;
+        }
+        h2 {
+            margin-top: 40px;
+        }
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        .example {
+            margin-bottom: 20px;
+        }
+        .example h3 {
+            color: #007acc;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .example p {
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .code {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            margin-bottom: 10px;
+        }
+        .output {
+            background-color: #e8f7e1;
+            padding: 10px;
+            border: 1px solid #b8e5b8;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #2d6a4f;
+        }
+        .output span {
+            font-weight: bold;
+        }
+        .example:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript String and Math Methods</h1>
+
+    <div class="section">
+        <h2>String Methods</h2>
+
+        <div class="example">
+            <h3>1. <code>String.prototype.toUpperCase()</code></h3>
+            <p>Converts a string to uppercase letters.</p>
+            <div class="code">
+                const str = "hello world";<br>
+                const upperStr = str.toUpperCase();<br>
+                console.log(upperStr); // "HELLO WORLD"
+            </div>
+            <div class="output" id="output1"></div>
+        </div>
+
+        <div class="example">
+            <h3>2. <code>String.prototype.toLowerCase()</code></h3>
+            <p>Converts a string to lowercase letters.</p>
+            <div class="code">
+                const str = "HELLO WORLD";<br>
+                const lowerStr = str.toLowerCase();<br>
+                console.log(lowerStr); // "hello world"
+            </div>
+            <div class="output" id="output2"></div>
+        </div>
+
+        <div class="example">
+            <h3>3. <code>String.prototype.includes()</code></h3>
+            <p>Checks if a string contains a specific substring.</p>
+            <div class="code">
+                const str = "The quick brown fox";<br>
+                const hasFox = str.includes("fox");<br>
+                console.log(hasFox); // true
+            </div>
+            <div class="output" id="output3"></div>
+        </div>
+
+        <div class="example">
+            <h3>4. <code>String.prototype.indexOf()</code></h3>
+            <p>Returns the index of the first occurrence of a specified value in a string.</p>
+            <div class="code">
+                const str = "Hello, world!";<br>
+                const index = str.indexOf("world");<br>
+                console.log(index); // 7
+            </div>
+            <div class="output" id="output4"></div>
+        </div>
+
+        <div class="example">
+            <h3>5. <code>String.prototype.split()</code></h3>
+            <p>Splits a string into an array of substrings based on a delimiter.</p>
+            <div class="code">
+                const str = "apple,orange,banana";<br>
+                const fruits = str.split(",");<br>
+                console.log(fruits); // ["apple", "orange", "banana"]
+            </div>
+            <div class="output" id="output5"></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Math Methods</h2>
+
+        <div class="example">
+            <h3>1. <code>Math.random()</code></h3>
+            <p>Generates a random floating-point number between 0 (inclusive) and 1 (exclusive).</p>
+            <div class="code">
+                const randomNum = Math.random();<br>
+                console.log(randomNum); // Output: Random number between 0 and 1
+            </div>
+            <div class="output" id="output6"></div>
+        </div>
+
+        <div class="example">
+            <h3>2. <code>Math.floor()</code></h3>
+            <p>Rounds a number down to the nearest integer.</p>
+            <div class="code">
+                const num = 4.7;<br>
+                const floored = Math.floor(num);<br>
+                console.log(floored); // 4
+            </div>
+            <div class="output" id="output7"></div>
+        </div>
+
+        <div class="example">
+            <h3>3. <code>Math.ceil()</code></h3>
+            <p>Rounds a number up to the nearest integer.</p>
+            <div class="code">
+                const num = 4.3;<br>
+                const ceiled = Math.ceil(num);<br>
+                console.log(ceiled); // 5
+            </div>
+            <div class="output" id="output8"></div>
+        </div>
+
+        <div class="example">
+            <h3>4. <code>Math.max()</code></h3>
+            <p>Returns the largest of the numbers provided.</p>
+            <div class="code">
+                const maxNum = Math.max(5, 12, 8, 23, 7);<br>
+                console.log(maxNum); // 23
+            </div>
+            <div class="output" id="output9"></div>
+        </div>
+
+        <div class="example">
+            <h3>5. <code>Math.min()</code></h3>
+            <p>Returns the smallest of the numbers provided.</p>
+            <div class="code">
+                const minNum = Math.min(5, 12, 8, 23, 7);<br>
+                console.log(minNum); // 5
+            </div>
+            <div class="output" id="output10"></div>
+        </div>
+    </div>
+
+    <script>
+        // String Method Outputs
+        const str1 = "hello world";
+        document.getElementById("output1").innerText = str1.toUpperCase(); // Output: "HELLO WORLD"
+
+        const str2 = "HELLO WORLD";
+        document.getElementById("output2").innerText = str2.toLowerCase(); // Output: "hello world"
+
+        const str3 = "The quick brown fox";
+        document.getElementById("output3").innerText = str3.includes("fox"); // Output: true
+
+        const str4 = "Hello, world!";
+        document.getElementById("output4").innerText = str4.indexOf("world"); // Output: 7
+
+        const str5 = "apple,orange,banana";
+        document.getElementById("output5").innerText = JSON.stringify(str5.split(",")); // Output: ["apple", "orange", "banana"]
+
+        // Math Method Outputs
+        document.getElementById("output6").innerText = Math.random(); // Output: Random number between 0 and 1
+
+        const num1 = 4.7;
+        document.getElementById("output7").innerText = Math.floor(num1); // Output: 4
+
+        const num2 = 4.3;
+        document.getElementById("output8").innerText = Math.ceil(num2); // Output: 5
+
+        document.getElementById("output9").innerText = Math.max(5, 12, 8, 23, 7); // Output: 23
+
+        document.getElementById("output10").innerText = Math.min(5, 12, 8, 23, 7); // Output: 5
+    </script>
+</body>
+</html>
+

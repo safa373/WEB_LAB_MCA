@@ -1,0 +1,43 @@
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+  margin-left: 40px;
+}
+
+h1 {
+  color: maroon;
+  
+}
+table, th, td {
+  border:1px solid black;
+  height:20px;
+  width:300px;
+  background-color:red;
+}
+</style>
+
+<title> basic2nd tags
+</title>
+</head>
+<body>
+<h1>Hotel</h1>
+<p>A temporary home away from home provided by a business that specializes in offering private room accommodations.</p>
+<img src="hotel.jpeg">
+<h2>fecilities</h2>
+<ol>
+<li>luxury amenities</li>
+<li>full-service</li>
+<li>highest level of personalized service</li>
+</ol>
+<table>
+  <tr>
+    <td>clean</td>
+    <td>afortable</td>
+    <td>positive vibe</td>
+  </tr>
+</table>
+<button><a href="base1.html">back to place</a></button>
+</body>
+</html>

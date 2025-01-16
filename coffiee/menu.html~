@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>menu
+</title>
+
+<link rel= " stylesheet " href= " menu.css ">
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>MENU Table</h2>
+
+<table>
+  <tr>
+    <th>ITEM</th>
+    <th>INCRIDIANCE RATIO</th>
+    <th>PRICE</th>
+  </tr>
+  <tr>
+    <td>Americano</td>
+    <td>is a type of coffee drink prepared by diluting an espresso shot with hot water at a 1:3 to 1:4 ratio</td>
+    <td>$400-/-</td>
+  </tr>
+  <tr>
+    <td>Caffè macchiato</td>
+    <td>is a type of coffee drink prepared by diluting an espresso shot with hot water at a 1:3 to 1:4 ratio</td>
+    <td>$400-/-</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>$500-/-</td>
+  </tr>
+   <tr>
+    <td>Americano</td>
+    <td>is a type of coffee drink prepared by diluting an espresso shot with hot water at a 1:3 to 1:4 ratio</td>
+    <td>$400-/-</td>
+  </tr>
+  <tr>
+    <td>Caffè macchiato</td>
+    <td>is a type of coffee drink prepared by diluting an espresso shot with hot water at a 1:3 to 1:4 ratio</td>
+    <td>$400-/-</td>
+  </tr>
+  
+</table>
+<button style="background-color:black; color:white" > <a href="cofiee.html">go homepage</a></button>
+
+</body>
+</html>

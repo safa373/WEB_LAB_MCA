@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: linen;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: maroon;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: inline-block;
+            width: 400px; /* Increased width */
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: maroon;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <h1>Registration Form</h1>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required>
+
+        <label for="sname">Second Name:</label>
+        <input type="text" id="sname" name="sname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" required>
+
+        <label for="district">District:</label>
+        <select id="district" name="district" required>
+            <option value="calicut">Calicut</option>
+            <option value="wayanad">Wayanad</option>
+            <option value="kannur">Kannur</option>
+            <option value="malappuram">Malappuram</option>
+        </select>
+
+        <label>Your Skills:</label>
+        <label for="java">JAVA</label>
+        <input type="range" id="java" name="java" min="0" max="10" value="0">
+        
+        <label for="python">Python</label>
+        <input type="range" id="python" name="python" min="0" max="10" value="0">
+        
+        <label for="cpp">C++</label>
+        <input type="range" id="cpp" name="cpp" min="0" max="10" value="0">
+
+        <label for="description">Description About You:</label>
+        <textarea id="description" name="description" rows="7" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

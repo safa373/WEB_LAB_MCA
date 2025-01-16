@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Linked Page</title>
+</head>
+<body>
+    <h1>This is the Linked Page</h1>
+    
+    <p>Here is another link: <a href="https://en.wikipedia.org/wiki/Fruit">Go to Example.com</a></p>
+    
+    <p><a href="main.html">Go back to Main Page</a></p>
+</body>
+</html>

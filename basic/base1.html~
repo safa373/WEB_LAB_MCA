@@ -1,0 +1,18 @@
+<html>
+<head>
+
+<title> basic1 tags
+</title>
+</head>
+<body>
+<h1>switzerland</h1>
+<p>stunning natural landscapes, including majestic mountains, pristine lakes, and picturesque villages</p>
+<h2>hotel booking</h2>
+<ol>
+<li>normal</li>
+<li>resot<li>
+<li>Eco hotels</li>
+</ol>
+<button><a href="base.html">Book Hotel</a></button>
+</body>
+</html>

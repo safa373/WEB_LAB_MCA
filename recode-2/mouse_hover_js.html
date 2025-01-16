@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Effect</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 50px;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    #mainContent {
+      background-color: #007acc;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 300px;
+      margin: 100px auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    #mainContent:hover {
+      background-color: #005fa3;
+    }
+
+    /* Hover content styles */
+    .hover-content {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      opacity: 0;
+      transform: scale(0.9);
+    }
+
+    /* Show hover content with animation */
+    .hover-content.show {
+      display: block;
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* Styling for the image inside hover content */
+    .hover-content img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    /* Styling for the text inside hover content */
+    .hover-content p {
+      font-size: 18px;
+      color: #555;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div id="mainContent" onmouseover="showContent()" onmouseout="hideContent()">
+  <h2>Hover over this content</h2>
+</div>
+
+<div id="hoverContent" class="hover-content">
+  <img src="./imgmos.jpeg" alt="New Image">
+  <p>New text on hover</p>
+</div>
+
+<script>
+  function showContent() {
+    document.getElementById('hoverContent').classList.add('show');
+  }
+
+  function hideContent() {
+    document.getElementById('hoverContent').classList.remove('show');
+  }
+</script>
+
+</body>
+</html>

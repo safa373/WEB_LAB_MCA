@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Changing Button</title>
+  <style>
+     body {
+      font-family: 'Arial', sans-serif;
+      color: rgb(26, 7, 7);
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 3em; 
+      margin-bottom: 15px; 
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for header */
+    }
+    /* Style the paragraph */
+    p {
+      font-size: 1.2em; 
+      margin-bottom: 25px;
+      letter-spacing: 0.5px;
+      font-weight: 300; /* Lighter text for paragraph */
+    }
+
+    /* Style the button */
+    button {
+      background-color: #4CAF50; 
+      color: white; 
+      padding: 15px 30px; 
+      border: none; 
+      border-radius: 50px; /* Rounded button */
+      font-size: 1.2em; 
+      cursor: pointer;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Button shadow */
+      transition: background-color 0.3s, transform 0.3s ease-in-out;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Color Changing Button</h1>
+  <p>Click the button to change through different background colors.</p>
+
+  <button id="changeColorBtn" onclick="changeColor()">Change Color</button>
+
+  <script>
+    let colorIndex = 0;
+    const colors = ['yellow', 'green', 'blue', 'white'];
+
+    function changeColor() {
+      document.body.style.backgroundColor = colors[colorIndex];
+      colorIndex = (colorIndex + 1) % colors.length;
+    }
+  </script>
+</body>
+</html>
+

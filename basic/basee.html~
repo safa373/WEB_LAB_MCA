@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+table, th, td {
+  border:1px solid black;
+  width:500px;
+  height:50px;
+}
+</style>
+<title> basic1st tags1
+</title>
+</head>
+<body>
+<h1>switzerland</h1>
+<p>stunning natural landscapes, including majestic mountains, pristine lakes, and picturesque villages</p>
+<h2>hotel booking</h2>
+<ol>
+<li>normal</li>
+<li>resot</li>
+<li>home stay</li>
+<li>Eco hotels</li>
+</ol>
+<table>
+  <tr>
+    <th>resot 1</th>
+    <th>resot 2</th>
+    <th>resot 3</th>
+  </tr>
+  <tr>
+    <td>place</td>
+    <td>3rd floor</td>
+    <td>95625682</td>
+  </tr>
+  <tr>
+    <td>place</td>
+    <td>3rd floor</td>
+    <td>95625682</td>
+  </tr>
+</table>
+</body>
+</html>
